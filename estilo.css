@@ -1,0 +1,49 @@
+*{ 
+    background-color: #765c5b57;
+    color:#f9f9f9;
+}
+
+h1 {
+    font-size: 50px;
+}
+.sub3{
+   color: #deb887; 
+}
+
+.sub2{
+    color: chartreuse;
+
+} 
+
+
+h1,h3 {
+   
+}
+
+p{
+    font-weight: 10;
+    
+}
+
+.Padre{
+   
+    padding: 10% 0;
+    text-align: center;
+}
+.Hijo{
+    
+    
+    padding: 20%;
+}
+
+body{
+    background-image:url(IMG/1696815564393.jpg) ;
+    
+}
+
+button{
+    padding: 5px;
+    box-shadow:  2px 3px ;
+    color: rgb(141, 173, 108);
+    border-radius: 20px;
+}
