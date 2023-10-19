@@ -1,6 +1,19 @@
 body{ 
-    background: #a3169092;
+    background: #d25fc292;
     
+}
+
+.img-final img {
+    width: 300px;
+    height: 200px;
+}
+
+.Primer-img img{
+    width: 300px;
+    height: 200px;
+}
+#inicio{
+   text-shadow: #ff00ff;
 }
 /*
 h1 {
