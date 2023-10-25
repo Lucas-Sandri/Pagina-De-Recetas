@@ -31,7 +31,7 @@
 
 </head>
 <body>
-    <h1>Titulo</h1>
+    <!-- <h1>Titulo</h1>
      <nav>
         <ul>
         <li><a href="">Menú</a></li>
@@ -66,6 +66,45 @@
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ab, reprehenderit possimus maxime est quia labore autem aperiam blanditiis nobis quam beatae quas dolor recusandae et, excepturi iste aut officia!
         </p>
-    </footer>
+    </footer> -->
+
+  <form action="servidor-ejemplo.com"><!--dirección del servidor donde se recibirán los datos de formulario-->
+ <fieldset>
+    <legend>INSCRIPCIÓN</legend>
+        <div> 
+            <label for="Primer Nombre">Introduzca su nombre</label>
+            <input type="text" id="Primer Nombre" placeholder="Primer Nombre">
+
+            <label for="Segundo Nombre">Segundo nombre</label>
+            <input type="text" id="Segundo Nombre" placeholder="Segundo Nombre">
+
+            <label for="Apellido">Apellido</label>
+            <input type="text" id="Apellido" placeholder="Apellido">
+        </div>
+        <div>
+            <label for="email">Introduzca su correo electrónico</label>
+            <input type="email" id="email" placeholder="Gmail">
+        </div>
+        <div>
+            <label for="date">Indique su fecha de nacimiento</label>
+            <input type="date" id="date" >
+        </div>
+        <div>
+            <h4>Seleccione los siguientes campos:</h4>
+            <input type="checkbox">¿Es usted un P3ndej0?
+            <input type="checkbox">¿Tiene hijos?
+            <input type="checkbox">¿Tiene alguna experiencia en la NASA?
+            <input type="checkbox">¿Es usted racista?
+
+        </div>
+        <div>
+            <input type="button" value="Enviar">
+        </div>
+        <div>
+            <label for="Mensaje">¿Por qué creé que se merece este puesto de trabajo en la mejor compañía de CRACKS</label>
+             <textarea id="Mensaje" cols="30" rows="10" placeholder="Diganos"></textarea>
+        </div>
+      </form>
+</fieldset>
 </body>
 </html>
