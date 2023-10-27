@@ -51,9 +51,38 @@ aside a{
     color: cyan;
 } */
 
-.flex-container{
+/* .flex-container{
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end ;
+} */
+
+.miestilo{
+    background-color: green;
 }
+
+@media (min-width:968px){
+    .miestilo{
+        background-color: blue;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: aqua;
+}
+
+.img1{
+    width: 500px;
+    height: 500px;
+}
+
+@media (max-width:968px) {
+    h1{
+        text-align: end;
+        color: rgb(255, 255, 255);
+    }
+    .img1
+}
+
 
