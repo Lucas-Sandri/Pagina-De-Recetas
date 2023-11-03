@@ -1,8 +1,27 @@
 body{ 
     background: #d25fc292;
-    
+    padding: 10px;
 }
 
+nav{
+    display: grid;
+    right: 1px;
+    position: fixed; 
+    top: 0%;
+    border:2px solid hsl(203, 86%, 8%) ;
+}
+header{
+    border: 2px groove chartreuse;
+}
+aside{
+    border: 3px ridge #ff0000;
+}
+article{
+    border:4px dotted #1500ff;
+}
+section{
+    border: 2px solid hsl(81, 100%, 50%);
+}
 .img-final img {
     width: 300px;
     height: 200px;
@@ -12,56 +31,17 @@ body{
     width: 300px;
     height: 200px;
 }
-
-h1 {
-    font-size: 50px;
-}
-.sub3{
-   color: #deb887; 
+nav ul li {
+ list-style: none;
 }
 
-.sub2{
-    color: chartreuse;
+ul li a {
+    text-decoration: none;
+    color: #1195e6;
+    text-shadow: hsla(56, 84%, 50%, 0.988) 1px 1px ;
+  
+}
 
-} 
-
-
-h1,h3 {
+nav ul {
    
 }
-
-p{
-    font-weight: 10;
-    
-}
-nav ul li{
-    display: inline-block;
-}
-nav{
-    position: fixed;
-    margin-top: 3%;
-}
-
-
-/* .Padre{
-   
-    padding: 10% 0;
-    text-align: center;
-}
-.Hijo{
-    
-    
-    padding: 20%;
-}
-
-body{
-    background-image:url(IMG/1696815564393.jpg) ;
-    
-}
-
-button{
-    padding: 5px;
-    box-shadow:  2px 3px ;
-    color: rgb(141, 173, 108);
-    border-radius: 20px;
-} */
