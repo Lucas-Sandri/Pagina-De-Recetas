@@ -1,27 +1,113 @@
 body{ 
-    background: #d25fc292;
-    padding: 10px;
+    background-image: url(../IMG/superficie-de-madera-clara-del-fondo-de-la-textura-con-el-viejo-modelo-natural-o-vieja-opinión-de.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: top;
+    padding: 5px;
+    
+}
+
+
+.flex-container{/*para ajustar el container al medio*/
+    display: flex;
+    padding-left: 15%;
+}
+
+
+.el-div-cuerpo{  /*estoy dando lugar a la barra de navegación*/
+    width: 150%; 
+   
+}
+
+
+.el-div-nav{ /*acomodando la barra de navegación*/
+    
+    position: fixed; 
+    
 }
 
 nav{
-    display: grid;
-    right: 1px;
-    position: fixed; 
-    top: 0%;
-    border:2px solid hsl(203, 86%, 8%) ;
+    border:groove 3px #0a090a;
+    border-radius: 20%;
+    background-color: violet;
+    
 }
+nav ul li {
+    list-style: none;
+    border-bottom: solid 3px #000000;
+    
+   }
+ul{
+    padding: 0%;
+    margin: 10px; 
+}
+   
+ul li a {
+    padding: 5px;
+    color: #1195e6;
+    text-shadow: hsla(0, 0%, 100%, 0.988) 1px 1px ;
+}
+a {
+    text-decoration: none;
+}
+
+
 header{
-    border: 2px groove chartreuse;
+    
 }
-aside{
-    border: 3px ridge #ff0000;
+
+
+.div-del-aside{
+    display: flex;
 }
+
+
+aside{/*acomodando el aside"recomendaciónes" para que el nav"barra de nav por el articulo" no lo tape*/
+    
+    flex-direction: column;
+    margin-top: 45%;
+    margin-bottom: 350%;
+   justify-content: flex-end;
+}
+aside img{
+    height: 300px;
+    width: 250px;
+    padding: 0;
+    margin: 0;
+}
+
+
 article{
-    border:4px dotted #1500ff;
+   
+}
+
+.div_ul_ingredientes{ /*este es el container de la lista que quiero ubicar la imagenes a su lado*/
+   
+    width: 30%;
+}
+.grid-container-imagenes-de-los-ingredientes{ /*acomodando las imagenes de los ingredientes con grid, al lado de la lista de ingredientes*/
+    display: grid;
+    grid-template-rows:150px 150px  ;
+    grid-template-columns:repeat(3, 150px ) auto-fit ;
+    display: inline-block;
+    position: absolute;
+    top: 57px;
+    left:240px ;
+   
+}
+.grid-container-imagenes-de-los-ingredientes img{/*acá ajuste el tamaño de las imagenes para acomodarlas dentro de las rejillas de grid*/
+    width: 115px;
+    height: 100px;
+    
+    left: 40px;
 }
 section{
-    border: 2px solid hsl(81, 100%, 50%);
+   
+    position: relative;
 }
+
+
 .img-final img {
     width: 300px;
     height: 200px;
@@ -31,17 +117,19 @@ section{
     width: 300px;
     height: 200px;
 }
-nav ul li {
- list-style: none;
-}
 
-ul li a {
-    text-decoration: none;
-    color: #1195e6;
-    text-shadow: hsla(56, 84%, 50%, 0.988) 1px 1px ;
+.sobrenosotros_icono{
+    height: 50px;
+    width: 50px;
+}
+footer{
+    border: 2px solid  rgb(0, 235, 235);
+    background-color: hsl(248, 43%, 79%);
+    padding: 20px;
+}
+.sobre_nosotros_redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   
-}
-
-nav ul {
-   
 }
