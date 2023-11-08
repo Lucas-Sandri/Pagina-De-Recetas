@@ -1,1 +1,3 @@
-console.log("Chau Mundo")
+// var nombre = "Lucass"
+
+// alert("Chau Mundo " +nombre+ "")

@@ -11,13 +11,14 @@ body{
 
 .flex-container{/*para ajustar el container al medio*/
     display: flex;
-    padding-left: 15%;
+    margin-left: 15%;/*para acomodar la barra de navegación */
+    margin-right: 15%;/*para acomodar el aside*/ 
 }
 
 
-.el-div-cuerpo{  /*estoy dando lugar a la barra de navegación*/
-    width: 150%; 
-   
+.el-div-cuerpo{   /*éste lo cree para para acomodar el nav pero ya lo resolví, dándole padding-left/right al flex container */
+   margin: 0;
+   padding: 0;
 }
 
 
@@ -53,40 +54,39 @@ a {
 }
 
 
-header{
-    
-}
+
 
 
 .div-del-aside{
+    
     display: flex;
 }
+aside a {
+    display: block;
+}
 
-
-aside{/*acomodando el aside"recomendaciónes" para que el nav"barra de nav por el articulo" no lo tape*/
-    
+aside{/*acomodando el aside"recomendaciones" para que el nav"barra de nav por el articulo" no lo tape*/
+    position: fixed;
     flex-direction: column;
-    margin-top: 45%;
-    margin-bottom: 350%;
+    margin-top: 0%;/*si le doy un margin-top/bottom mas de 200% crea un espacio en blanco entre el article y el footer*/
+    margin-bottom: 0%;
    justify-content: flex-end;
 }
 aside img{
-    height: 300px;
-    width: 250px;
+    height: 170px;
+    width: 150px;
     padding: 0;
     margin: 0;
 }
 
 
-article{
-   
-}
 
-.div_ul_ingredientes{ /*este es el container de la lista que quiero ubicar la imagenes a su lado*/
+
+.div_ul_ingredientes{ /*este es el container de la lista que quiero ubicar la imágenes a su lado*/
    
     width: 30%;
 }
-.grid-container-imagenes-de-los-ingredientes{ /*acomodando las imagenes de los ingredientes con grid, al lado de la lista de ingredientes*/
+.grid-container-imagenes-de-los-ingredientes{ /*acomodando las imágenes de los ingredientes con grid, al lado de la lista de ingredientes*/
     display: grid;
     grid-template-rows:150px 150px  ;
     grid-template-columns:repeat(3, 150px ) auto-fit ;
@@ -118,18 +118,22 @@ section{
     height: 200px;
 }
 
-.sobrenosotros_icono{
-    height: 50px;
-    width: 50px;
+footer div a img{
+    height: 40px;
+    width: 40px;
 }
 footer{
-    border: 2px solid  rgb(0, 235, 235);
-    background-color: hsl(248, 43%, 79%);
+    /* border: 2px solid  rgb(0, 235, 235);
+    background-color: hsl(248, 43%, 79%); */
     padding: 20px;
+    margin-right: 88%;
+    margin-top: -36%;
+ 
 }
-.sobre_nosotros_redes{
+.sobre_nosotros_redes{ /*quiero acomodar el footer al lado inferior izquierdo con flex column*/
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  
+    flex-direction: column;
+    align-items: center;
 }
+/*LO DE ARRIBA FUE ACOMODAR EL FOOTER, NAV, ASIDE, IMÁGENES CON GRID Y FLEXBOX*/
+/*AHORA VOY A ARREGLAR LOS TEXTOS, VOY A TRATAR DE QUE QUEDE NAIS(NICE) */
