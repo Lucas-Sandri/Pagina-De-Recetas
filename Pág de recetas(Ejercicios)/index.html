@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="../normalize.css">
 </head>
 <body>
-      <div class="el-div-nav">
-            <nav>
+      <div class="el-div-nav" id="id_del_div_nav">
+            <nav class="clase_del_nav" id="id_del_nav">
                  <ul>
                        <li><a href="#inicio">Encabezado</a></li>
                        <li><a href="#Ingredientes">Ingredientes</a></li>
@@ -29,9 +29,17 @@
                    <p>
                         Hola, ¿Cómo estas? <strong>dizque cocinero</strong>, aca te enseño los pasos para hacer un pan <strong>dizque saludable</strong>, presta atención y aprende algo al menos vago de *.
                    </p>
-                <div class="Primer-img">
-                       <img title="un pan con harina de maíz" src="https://cocina-casera.com/wp-content/uploads/2014/08/Pan-maiz-trigo.jpg" alt="Imagen de un pan ">
-                </div>
+                   <button id="boton_mostrar" onclick="Mostrar()">
+                        Mostrar Imagen
+                   </button>
+                      <div id="la_img" class="Primer-img">
+                             <img title="un pan con harina de maíz" src="https://cocina-casera.com/      wp-content/uploads/2014/08/Pan-maiz-trigo.jpg" alt="Imagen de un pan       ">
+                             
+                             <button onclick="Ocultar()">
+                                   Ocultar Imagen
+                             </button>
+                      </div>
+            
               </header>
              
              <article>
@@ -97,7 +105,9 @@
                        <h3 id="Recomendaciones">
                             Recomendaciones
                        </h3>
-                       <a href="https://www.lanacion.com.ar/recetas/" target="_blank"><strong>Click para ir a LA NACION recetas</strong></a> 
+                       <button id="boton" onclick="funcionAlert()">
+                               <a href="https://www.lanacion.com.ar/recetas/" target="_blank"><strong>Click para ir a LA NACION recetas</strong></a> 
+                       </button>
                        <img src="../IMG/img-de-la-pág-LA NACION.png" alt="captura de la página LA NACION recetas"><br></br>
                        <a href="https://cookpad.com/ar" target="_blank"><strong>Click para ir a COOKPAD recetas</strong></a>
                        <img src="../IMG/img-de-la-pág-COOKPAD.png" alt="captura de la página de recetas COOKPAD"> 

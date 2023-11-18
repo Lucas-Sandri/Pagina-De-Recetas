@@ -116,6 +116,10 @@ section{
 .Primer-img img{
     width: 300px;
     height: 200px;
+   
+}
+#la_img{ /*el id de la imagen que quiero que este oculta, y la voy a mostrar con un botón y ocultarla nuevamente con otro*/
+    display: none ;
 }
 
 footer div a img{
