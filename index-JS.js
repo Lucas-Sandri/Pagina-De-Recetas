@@ -222,9 +222,9 @@
 //Para declarar una función escribimos la palabra clave "function" y seguido el nombre de la función (faltan los parámetros ) y como en todas las expresiones luego coloco llaves donde irán las instrucciones   
 
 //cree una función y en el index.html a un botón le di un método onclick para que cuando se presione me muestre una alerta diciéndome que voy a otra pagina 
-// function funcionAlert() {
-//        alert("¡Su proximo destino es: página de LA NACION recetas!")
-// }
+function funcionAlert() {
+        alert("¡Su proximo destino es: página de LA NACION recetas!")
+ }
 
 
 //MOSTRAR Y OCULTAR IMAGEN CON BOTONES; método "onclick"
@@ -241,3 +241,42 @@ function Ocultar() {
        document.getElementById("la_img").style.display = "none";
        document.getElementById("boton_mostrar").style.display = "block"
 }
+/*Al presionar el botón mostrar imagen aparecerá el h3".imagen_mostrando"*/
+//let h3ImgMostr = document.getElementsByClassName("imagen_mostrando")
+
+//function mostrarh3() {
+  //     h3ImgMostr.style.display = "block"
+//}
+
+
+// let Rectangulo = class {
+//        constructor(alto, ancho) {
+//          this.alto = alto;
+//          this.ancho = ancho;
+//        }
+//      };
+     
+//      console.log(Rectangulo.name);
+
+// let firstName = "Lucass", segundo="Leonardo", lastName="Sandri"
+
+// console.log(2+4*3/9, segundo, lastName)
+
+// let saldoDisponible="5010.10", retirar="5000"
+// console.log("Su saldo disponible \es",saldoDisponible,"$")
+// console.log("Va a retirar",retirar,"$")
+// saldoDisponible-=retirar
+// console.log(`Su\nsaldo\tdisponible\nes:`,saldoDisponible,"$")
+
+
+
+
+// function setTheme() {
+//        const root = document.documentElement;
+//        const newTheme = root.className === 'dark' ? 'light' : 'dark';
+//        root.className = newTheme;
+       
+//        document.querySelector('.theme-name').textContent = newTheme;
+//      }
+     
+//      document.querySelector('.theme-toggle').addEventListener('click', setTheme)

@@ -1,0 +1,77 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS' ;
+}
+body{
+    display: flex;
+    align-items: center;
+    margin: 0% 10% 0% 0%;
+    justify-content: space-between;
+    /* background-image: url(../IMG/fondo\ de\ miel.png);
+    background-repeat: no-repeat;
+    background-size: cover;     */
+}
+.imagen-icono{
+    background-image: url(../IMG/imagen\ de\ codigos\ de\ programación.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30vw;
+    height: 110vh;
+    aspect-ratio: auto;
+}
+.imagen-icono div{
+    display: flex;
+    justify-content: center;
+}
+
+.my-icon{
+    margin-top: 6em;
+    width: 50%;
+}
+  
+form{
+    width: 70%;
+    padding: 0 0 0 10%;
+    
+}
+fieldset{
+    min-width: auto;
+    border: solid 1px #000000;
+    display: grid;
+    grid-template-rows: 28% 28% 28%;
+    grid-template-columns: 50% 50% ;
+    grid-gap: 10px;
+}
+input{
+    
+    width:90%;
+}
+
+fieldset div label{
+   display: block;
+   
+ }
+ 
+
+label{
+    font-size: 80%;
+    font-weight: 900;
+}
+input:invalid{
+    background-color: rgba(243, 89, 89, 0.724);
+}
+input:valid{
+    background-color: rgba(76, 251, 79, 0.541);
+}
+.hr-2{
+    box-shadow: 0px 2px 4px #313131a1;
+}
+button{
+    border-radius: 9px;
+    background:linear-gradient(200deg, #d0f30d3f, #13da7a80,#2200ff84);
+    box-shadow: 3px 3px 8px #00000072;
+    padding:4px 14px 4px 14px;
+    margin: 3%;
+}
+button:active{
+    transform: scale(1.1);
+}

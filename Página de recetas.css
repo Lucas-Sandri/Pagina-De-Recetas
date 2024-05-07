@@ -1,12 +1,22 @@
 body{ 
-    background-image: url(IMG/superficie-de-madera-clara-del-fondo-de-la-textura-con-el-viejo-modelo-natural-o-vieja-opinión-de.jpg);
+    /* background-image: url(IMG/superficie-de-madera-clara-del-fondo-de-la-textura-con-el-viejo-modelo-natural-o-vieja-opinión-de.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position-y: top;
-    padding: 5px;
+    padding: 5px; */
+    
     
 }
+@font-face {
+    font-family: my-cool-font;
+    src: url(../fonts/the-font-file.woff);
+  }
+  
+  h1 {
+    font-family: my-cool-font, sans-serif;
+    
+  }
 
 
 .flex-container{/*para ajustar el container al medio*/
@@ -23,7 +33,7 @@ body{
 
 
 .el-div-nav{ /*acomodando la barra de navegación*/
-    
+    display: none;/*PARA QUE EL NAV NO ME MOLESTE*/
     position: fixed; 
     
 }
@@ -52,8 +62,9 @@ ul li a {
 a {
     text-decoration: none;
 }
-
-
+.imagen_mostrando{
+    display: none;
+}
 
 
 
@@ -141,3 +152,363 @@ footer{
 }
 /*LO DE ARRIBA FUE ACOMODAR EL FOOTER, NAV, ASIDE, IMÁGENES CON GRID Y FLEXBOX*/
 /*AHORA VOY A ARREGLAR LOS TEXTOS, VOY A TRATAR DE QUE QUEDE NAIS(NICE) */
+
+table {
+    border: solid 1px #000;
+}
+th{
+    border: solid 1px #000;
+}
+td{
+    border: solid 1px #000;
+}
+
+
+
+
+
+
+
+
+/*XML*/
+
+.container {
+    max-width: 200px;
+    margin: auto;
+  }
+  
+  .svg-circle:hover + .svg-text-group {
+    opacity: 0;
+  }
+
+  .padre{
+    background-color: rgb(145, 116, 81);
+    font-size: 15px;
+  }
+  .hijo{
+    background-color: #1195e6;
+    font-size: 2em;
+  }
+  .nieto{
+    background-color: #7a51f5;
+    font-size: 2em;
+  }
+
+
+
+  /*Selectores por descendencia*/
+  main{/*PADRE - perents*/
+    width: 75px;
+    height: 124px;
+    background-color:#000;
+  }
+  main > div{/*CHILD*/
+    width: 70px;
+    height: 40px;
+    background-color: rgb(255, 0, 0);
+  }
+  main > div > div{/*GRAND-CHILD NIETOS*/
+    width: 50px;
+    height: 20px;
+    background-color: #1195e6;
+  }
+  main > .child-group3 > div {
+    background-color: aliceblue;
+  }
+
+  .child-group1 + div{
+    width: 70px;
+    height: 40px;
+    background-color: #35e611;
+  }
+  .child-group1 + div + div{
+    background-color: #7a51f5;
+  }
+  .parent > div {
+    background-color: aquamarine;
+  }
+  .text1{
+    background-color: #35e611;
+  }
+  .text2{
+    background-color: #1195e6;
+  }
+  .text3{
+   background-color: brown;
+  }
+  :dir(rtl){
+   color: #ff0000; 
+   font-size: 40px;
+  }
+  /* .bbottonn:hover{
+    background-color: #0008ff;
+    }
+  .bbottonn:active{
+  background-color: #ff0000;
+  } */
+  a:disabled{
+    background-color: #ff00ff;
+  }
+ .enlace1{
+  
+  font-size: 1.5em;
+  display: block;
+ }
+ 
+ .enlace2{
+  font-size: 1.5em;
+  display: block;
+ }
+ .bbottonn:disabled{/*PARA QUE ME FUNCIONE LA PSEUDO-CLASE tengo que agregar el atributo al elemento que quiero deshabilitar*/
+  background-color: #908e90;
+  color: #ffffff;
+ }
+ .enlace3{
+  font-size: 1.5em;
+ }
+ legend{
+  border:solid 2px #000;
+ }
+ input{
+  display: block;
+ }
+ .btn-enviar-consulta{
+  margin-top: 20px;
+ }
+ select{
+  display: block;
+ }
+ legend :nth-child(6) {
+  margin-bottom: 10px;
+  
+ }
+ legend{
+  background-image: url(IMG/fondo\ de\ miel.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  
+ }
+ em:first-of-type{
+  background-color: #35e611;
+ }
+
+optgroup:hover{
+  background-color: #27e9ff;
+}
+ option:first-child{
+  background-color: #ffff00;
+ }
+ option:nth-child(2){
+  background-color: #ff00d4;
+ }
+ option:nth-child(3){
+  background-color: #c800ff;
+ }
+ .optgroup-2 option:first-child{
+  background-color: #ff0000;
+ }
+ .optgroup-2 option:nth-child(2){
+  background-color: rgb(0, 255, 60);
+ }
+ .optgroup-2 option:nth-child(3){
+  background-color: rgb(13, 0, 255);
+ }
+ option:hover{
+  filter: brightness(150%);
+  background-color: red;
+ }
+ .amarillo:hover{
+  background-color: #ffff00;
+ }
+ .div_ul_ingredientes{
+  
+  padding-left: 10%;
+  
+ }
+ li:first-child{
+  list-style-image: url(IMG/MINImi\ icono\ SLL\ 1.0.png);
+  padding: 5%;
+ }
+
+li:nth-child(2){
+  list-style-image: url(IMG/fondo\ de\ miel.png);
+}
+
+li::selection{
+  background-color: #ff0000;
+}
+
+span {
+  position: relative;
+  text-decoration: underline;
+  text-decoration-style: double;
+  color: #00f;
+  cursor: help;
+}
+
+span:hover::after,
+span:focus::after {
+  content: attr(data-desc);
+  position: absolute;
+  left: 0;
+  top: 24px;
+  min-width: 200px;
+  border: 1px #ff0000 solid;
+  border-radius: 10px;
+  background-color: #ffffcc;
+  padding: 12px;
+  color: #000000;
+  font-size: 14px;
+  z-index: 1;
+}
+
+
+.container{
+  height: 20em;
+  background-color: #00f;
+  
+  
+}
+.container_form-sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: .1%;
+  transform: skew(20deg);
+}
+
+
+
+
+
+
+
+div{
+  font-family:sans-serif;
+}
+.sticky{
+  position:-webkit-sticky;
+  position:sticky;
+  top:10px;
+  color:white;
+  padding:10px;
+  font-size:1.1em;
+  background-color:#e74c3c;
+}
+.long{
+  padding:1em;
+  height:25ch;
+  font-size:3em;
+  text-transform:uppercase;
+ }
+
+body {
+  display: grid;
+  place-items: center;
+  height: 90vh;
+}
+
+h1 {
+  text-align: center;
+  font-family: system-ui, serif;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+
+
+
+
+.padre{
+  
+  --width-ancho:130px;
+  --height-alto:350px;
+  --background-color:rgb(242, 14, 242);
+  background-color: #35e611;
+  height: 400px;
+  width: 170px;
+  
+}
+
+.nieto1{
+  background-color: #00f;
+  width: 165px;
+  height: 20px;
+}
+.bisNieto1{
+  width: var(--width-ancho);
+  height: var(--height-alto);
+  background-color: var(--background-color);
+}
+
+
+
+
+/*TEMA OSCURO Y CLARO EJEMPLO*/
+
+
+:root.dark {
+  --border-btn: 1px solid rgb(220, 220, 220);
+  --color-base-bg: rgb(18, 18, 18);
+  --color-base-text: rgb(240, 240, 240);
+  --color-btn-bg: rgb(36, 36, 36);
+}
+
+:root.light {
+  --border-btn: 1px solid rgb(36, 36, 36);
+  --color-base-bg: rgb(240, 240, 240);
+  --color-base-text: rgb(18, 18, 18);
+  --color-btn-bg: rgb(220, 220, 220);
+}
+:root.blue{
+  --border-btn: 1px solid rgb(220, 220, 220);
+   --color-base-bg: rgb(1, 1, 240);
+   --color-base-text: rgb(0,240,0);
+   --color-btn-bg: rgb(0, 0, 240);
+ }
+
+body,
+.theme-toggle {
+  color: var(--color-base-text);
+}
+
+body {
+  background-color: var(--color-base-bg);
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.theme-toggle {
+  background-color: var(--color-btn-bg);
+  border: var(--border-btn);
+  font-size: 1.125rem;
+  padding: 10px 20px;
+}
+
+.theme-toggle:hover {
+  cursor: pointer;
+}
+
+.theme-toggle:focus {
+  outline: var(--border-btn);
+}
+
+body{
+  margin: 0%;
+}
+
+div label {
+  display: inline;
+  margin-left: 100%;
+}
+div input{
+  display: inline;
+}
